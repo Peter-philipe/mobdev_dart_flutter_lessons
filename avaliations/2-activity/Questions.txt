@@ -1,0 +1,62 @@
+Responda às seguintes questões:
+
+1) Qual a sintaxe correta para declarar uma variável inteira em Dart?
+
+
+2) Qual a sintaxe correta para declarar uma variável que pode armazenar valores nulos em Dart?
+
+
+3) Qual o valor padrão de uma variável não inicializada em Dart?
+
+
+4) Qual a sintaxe correta para declarar uma variável do tipo String em Dart?
+
+
+5) Qual a sintaxe correta para atribuir um valor à uma variável em Dart?
+
+
+6) Qual a sintaxe correta para declarar e inicializar uma variável em Dart?
+
+
+7) Quais os tipos de dados numéricos disponíveis em Dart?
+
+
+8) Qual a diferença entre int e double em Dart?azena valores decimais.
+
+9) Qual a sintaxe correta para converter uma variável do tipo String para int em Dart?
+
+
+10) Qual a sintaxe correta para converter uma variável do tipo int para String em Dart?
+
+
+11) Qual a sintaxe correta para declarar uma variável constante em Dart?
+
+
+12) Qual a sintaxe correta para declarar uma variável final em Dart?
+
+
+13) Qual a diferença entre uma variável constante e final em Dart?
+
+
+14) Qual a sintaxe correta para declarar uma variável do tipo List em Dart?
+
+
+15) Qual a sintaxe correta para adicionar um elemento em uma lista em Dart?
+
+
+16) Qual a sintaxe correta para acessar o primeiro elemento de uma lista em Dart?
+
+
+17) Qual a sintaxe correta para declarar uma variável do tipo Map em Dart?
+
+
+18) Qual a sintaxe correta para adicionar um par de chave-valor em um Map em Dart?
+
+
+19) Qual a sintaxe correta para acessar o valor de uma chave em um Map em Dart?
+
+
+20) Qual a diferença entre uma lista e um Map em Dart?
+
+
+21) O que é inferencia de tipos em Dart ?
