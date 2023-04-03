@@ -60,6 +60,9 @@ void main(List<String> args) {
 
   
   print('8) Qual a diferença entre int e double em Dart?azena valores decimais.');
+
+
+  
   print('9) Qual a sintaxe correta para converter uma variável do tipo String para int em Dart?');
   
   var texto_de_num = '1';
@@ -72,11 +75,50 @@ void main(List<String> args) {
   int int_para_string = 3;
   String int_convertido = int_para_string.toString();
 
-  print('Inteiro convertido para string: ${int_para_string}. Tipo atual da variável atualmente: ${int_convertido.runtimeType}');
+  print('Inteiro convertido para string: ${int_para_string}. Tipo atual da variável atualmente: ${int_convertido.runtimeType} \n');
+
+  print('11) Qual a sintaxe correta para declarar uma variável constante em Dart?');
+
+  const int num_contante = 1;
+  const texto_const = 'dart';
+
+  print('Colocamos a palavra reservada "const" no começo da declaração ção de uma variável \n');
+
+  print('12) Qual a sintaxe correta para declarar uma variável final em Dart?');
+
+  final  final_float_num = 5.9;
+  print('Colocamos a palavra reservada "final" no começo da declaração de uma variável \n');
 
 
+  print('13) Qual a diferença entre uma variável constante e final em Dart?');
 
-
+  print('Uma variável constate (const) em dart é inicializada em tempo de compilação\n'+
+  'já a final é inicializada em tempo de execução. Além disso, você pode usar final para\n'+
+  'para declarar variáveis de instáncias dentro de classes, mas const não pode ser usada nesse declaração\n');
   
+  print('14) Qual a sintaxe correta para declarar uma variável do tipo List em Dart?');
+  print('Existem váriais maneiras de se declarar uma lista. No código exite 3 exemplos de como fazer\n');
+  
+  var lista_com_colchete = [7, 5, 9];
+  var lista_especificando_o_tipo = <String>['d','a','r','t'];
+  List<double> lista_com_tipificacao_no_comeco = [7.5, 9.3, 8.9];
+
+  print('Lista declara com colchetes: ${lista_com_colchete}');
+  print('Lista declara especificando o tipo dos elementos: ${lista_especificando_o_tipo}');
+  print('Lista declara especificando o tipo dos elementos no começo: ${lista_com_tipificacao_no_comeco}\n');
+
+  print('15) Qual a sintaxe correta para adicionar um elemento em uma lista em Dart?');
+
+  lista_com_colchete.add(45);
+  lista_com_colchete.addAll([1,2,3]);
+
+  print('Adição na lista declara com colchetes: ${lista_com_colchete}\n');
+
+  print('16) Qual a sintaxe correta para acessar o primeiro elemento de uma lista em Dart?');
+  print('Primeiro elemento da lista criada com colchete: ${lista_com_colchete[0]} \n');
+
+
+  print('17) Qual a sintaxe correta para declarar uma variável do tipo Map em Dart?');
+
 
 }
