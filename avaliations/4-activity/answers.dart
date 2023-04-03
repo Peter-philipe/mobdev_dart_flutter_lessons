@@ -53,8 +53,30 @@ void main(List<String> args) {
   double numero_tipo_double = 4.2;
   num pode_ser_tanto_int_quanto_double = 1;
 
+  print('Existem 3 tipos dados númericos no dart:\n'+
+  'O primeiro é o "int" usando para variáveis de número inteiros\n'+
+  'O segundo é o "double" usando para números com casas decimais\n'+
+  'E por fim, temos o tipo "num" no qual a variável pode assumir o valor tanto de "int" como o de "double" \n');
+
   
+  print('8) Qual a diferença entre int e double em Dart?azena valores decimais.');
+  print('9) Qual a sintaxe correta para converter uma variável do tipo String para int em Dart?');
+  
+  var texto_de_num = '1';
+  int numero_convertido = int.parse(texto_de_num);
+
+  print('Texto convertido em número: "${texto_de_num}". Tipo atual da variável atualmente: ${numero_convertido.runtimeType} \n');
+
+  print('10) Qual a sintaxe correta para converter uma variável do tipo int para String em Dart?');
+
+  int int_para_string = 3;
+  String int_convertido = int_para_string.toString();
+
+  print('Inteiro convertido para string: ${int_para_string}. Tipo atual da variável atualmente: ${int_convertido.runtimeType}');
 
 
+
+
+  
 
 }
