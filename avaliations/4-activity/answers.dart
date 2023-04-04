@@ -59,10 +59,10 @@ void main(List<String> args) {
   'E por fim, temos o tipo "num" no qual a variável pode assumir o valor tanto de "int" como o de "double" \n');
 
   
-  print('8) Qual a diferença entre int e double em Dart?azena valores decimais.');
+  print('8) Qual a diferença entre int e double em Dart?');
+  print('"int" armazena valores inteiros e "double" é usado para armazenar tanto inteiros\n'+
+  'quanto números com casas decimais.');
 
-
-  
   print('9) Qual a sintaxe correta para converter uma variável do tipo String para int em Dart?');
   
   var texto_de_num = '1';
@@ -119,6 +119,54 @@ void main(List<String> args) {
 
 
   print('17) Qual a sintaxe correta para declarar uma variável do tipo Map em Dart?');
+  
+  var energias_renovaveis = {
+    'solar': "Painel solar",
+    'eólica': "Aerogerador",
+  };
 
+  var maiores_estados =  Map<int, String>();
+  maiores_estados[1] = "Amazonas";
+  maiores_estados[2] = "Pará";
+  maiores_estados[3] = "Mato Grosso";
+
+  print('Map criado com {"chave": "valor"}: \n');
+
+  for (var energia in energias_renovaveis.keys)
+  {
+    print('${energias_renovaveis[energia]} é um gerador de energia ${energia}');
+  }
+
+  print('\nMap criado com definição de tipo chave valor Map<int, String>');
+  print('Maiores estados do Brasil\n');
+
+  for (int chave = 1; chave <= maiores_estados.length; chave++)
+  {
+    print('${chave}: ${maiores_estados[chave]}');
+  }
+  
+  print('\n18) Qual a sintaxe correta para adicionar um par de chave-valor em um Map em Dart?');
+  
+  maiores_estados[4] = "Mina Gerais";
+  final quinto_estado = <int, String>{5: "Bahia", 6: "Mato Grosso do Sul"};
+  maiores_estados.addEntries(quinto_estado.entries);
+
+  print('Maiores estados do Brasil com mais elementos no map\n');
+  for (int chave = 1; chave <= maiores_estados.length; chave++)
+  {
+    print('${chave}: ${maiores_estados[chave]}');
+  }
+
+  print('\n19) Qual a sintaxe correta para acessar o valor de uma chave em um Map em Dart?');
+  print('Usando cochetes: variável_map[chave]\n');
+
+  print('20) Qual a diferença entre uma lista e um Map em Dart?');
+  print('A indexação de listas só pode ser feita por uma sequência que começa sempre do zero e termina no\n'+
+  'termina em "n", onde n é a quantidade de elementos da lista menos 1. Já variáveis do tipo map podem\n'+
+  'variar no tipo de indexação não ficando restrito a uma sequência\n');
+
+  print('21) O que é inferência de tipos em Dart ?');
+  print('Quando uma pessoa não declara o tipo da variável explicitamente o interpretador de dart\n'+
+  'faz uma inferência de qual é tipo de dado que decladro na variável');
 
 }
