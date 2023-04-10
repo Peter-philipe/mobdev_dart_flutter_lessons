@@ -1,4 +1,4 @@
-
+import 'dart:collection';
 
 void main (List<String> args){
 
@@ -62,6 +62,31 @@ void main (List<String> args){
 
   print('12) Como verificar se um conjunto é subconjunto de outro conjunto em Dart?');
 
-  
+  var dinossauros_terrestres = {'Parassauro', 'Paquicefalossauro'};
+  print('Conjunto A: ${herbivoros}');
+  print('Conjunto B: ${dinossauros_terrestres}');
+  print('O Conjunto B pertence a A de dois conjuntos: ${herbivoros.containsAll(dinossauros_terrestres)}\n');
 
+  print('13) Como verificar se dois conjuntos são iguais em Dart?');
+  var biped_dinosaurs = {'alossauro', };
+
+}
+
+
+bool setEquals<T>(Set<T>? a, Set<T>? b) {
+  if (a == null) {
+    return b == null;
+  }
+  if (b == null || a.length != b.length) {
+    return false;
+  }
+  if (identical(a, b)) {
+    return true;
+  }
+  for (final T value in a) {
+    if (!b.contains(value)) {
+      return false;
+    }
+  }
+  return true;
 }
