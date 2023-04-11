@@ -68,7 +68,15 @@ void main (List<String> args){
   print('O Conjunto B pertence a A de dois conjuntos: ${herbivoros.containsAll(dinossauros_terrestres)}\n');
 
   print('13) Como verificar se dois conjuntos são iguais em Dart?');
-  var biped_dinosaurs = {'alossauro', };
+  var biped_dinosaurs = {'alossauro', 'microraptor', 'drodonte'};
+  var carnivorus_dinosaurs = {'alossauro', 'microraptor', 'drodonte'};
+
+  print('Conjunto A: ${biped_dinosaurs}');
+  print('Conjunto B: ${biped_dinosaurs}');
+  print('Igualdade de dois conjuntos: ${setEquals(biped_dinosaurs, carnivorus_dinosaurs)}\n');
+
+  print('14) Como criar um conjunto a partir de uma lista em Dart?');
+  
 
 }
 
