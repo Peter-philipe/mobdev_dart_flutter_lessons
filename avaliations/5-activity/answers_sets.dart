@@ -1,7 +1,6 @@
 import 'dart:collection';
 
-void main (List<String> args){
-
+void main(List<String> args) {
   print('01) O que é um conjunto em Dart?');
   print('É uma coleção de objetos que devem ser únicos\n');
 
@@ -14,7 +13,6 @@ void main (List<String> args){
   print('03) Como criar um conjunto com elementos em Dart?');
   print('Exemplo no código\n');
   var dinosauros = {'Alosauro', 'Argentaves', 'Estegosauro'};
-
 
   print('04) Qual a diferença entre um conjunto e uma lista em Dart?');
   print('Uma lista pode ter elementos repetidos, mas o conjunto não\n');
@@ -29,10 +27,12 @@ void main (List<String> args){
   forca_natureza.remove('Átomica');
   print('Removendo um elemento: ${forca_natureza}\n');
 
-  print('07) Como verificar se um conjunto contém um determinado elemento em Dart?');
+  print(
+      '07) Como verificar se um conjunto contém um determinado elemento em Dart?');
   print('Conjunto: ${dinosauros}');
   print('Elemento a ser procurado: ${dinosauros.elementAt(1)}');
-  print('Resultado da verificarção: ${dinosauros.contains(dinosauros.elementAt(1))} \n');
+  print(
+      'Resultado da verificarção: ${dinosauros.contains(dinosauros.elementAt(1))} \n');
 
   print('08) Como verificar se um conjunto é vazio em Dart?');
   print('Conjunto com elementos: ${dinosauros.isEmpty}');
@@ -46,7 +46,7 @@ void main (List<String> args){
 
   print('10) Como obter a interseção de dois conjuntos em Dart?');
 
-  var herbivoros = {'Parassauro', 'Paquicefalossauro','Estegosauro'};
+  var herbivoros = {'Parassauro', 'Paquicefalossauro', 'Estegosauro'};
   var instersection = herbivoros.intersection(dinosauros);
 
   print('Conjunto 1: ${herbivoros}');
@@ -60,12 +60,14 @@ void main (List<String> args){
   print('Conjunto B: ${dinosauros}');
   print('Diferença (B - A) de dois conjuntos: ${not_herbivorous}\n');
 
-  print('12) Como verificar se um conjunto é subconjunto de outro conjunto em Dart?');
+  print(
+      '12) Como verificar se um conjunto é subconjunto de outro conjunto em Dart?');
 
   var dinossauros_terrestres = {'Parassauro', 'Paquicefalossauro'};
   print('Conjunto A: ${herbivoros}');
   print('Conjunto B: ${dinossauros_terrestres}');
-  print('O Conjunto B pertence a A de dois conjuntos: ${herbivoros.containsAll(dinossauros_terrestres)}\n');
+  print(
+      'O Conjunto B pertence a A de dois conjuntos: ${herbivoros.containsAll(dinossauros_terrestres)}\n');
 
   print('13) Como verificar se dois conjuntos são iguais em Dart?');
   var biped_dinosaurs = {'alossauro', 'microraptor', 'drodonte'};
@@ -73,13 +75,40 @@ void main (List<String> args){
 
   print('Conjunto A: ${biped_dinosaurs}');
   print('Conjunto B: ${biped_dinosaurs}');
-  print('Igualdade de dois conjuntos: ${setEquals(biped_dinosaurs, carnivorus_dinosaurs)}\n');
+  print(
+      'Igualdade de dois conjuntos: ${setEquals(biped_dinosaurs, carnivorus_dinosaurs)}\n');
 
   print('14) Como criar um conjunto a partir de uma lista em Dart?');
+  var exemplo_de_lista = [4, 50, 4, 6, 8, 7, 8];
+  var conjunto_da_lista = exemplo_de_lista.toSet();
+
+  print('Lista: ${exemplo_de_lista}');
+  print('Conjunto feito a partir da lista: ${conjunto_da_lista}\n');
+
+  print('15) Como criar uma lista a partir de um conjunto em Dart?');
+  var set_to_list = {'avell', 'dell', 'acer'};
+  var list_from_set = set_to_list.toList();
+
+  print('Conjunto: ${set_to_list}');
+  print('Lista feito a partir de um conjunto: ${list_from_set}\n');
+
+  print('16) Como transformar um conjunto em uma lista de strings em Dart?');
+  var set_of_numbers = {4, 5, 6, 834};
+  var list_of_string = set_of_numbers.toString();
+
+  print('Conjunto: ${set_of_numbers}');
+  print('Lista feito a partir de um conjunto: ${list_of_string}\n');
+
+  print('17) Como calcular a união de vários conjuntos em Dart?');
+  var list_of_sets = [biped_dinosaurs, dinosauros, set_to_list];
+  var set_united = unirConjuntos(list_of_sets);
+
+  print('${set_united}');
+
+ 
+
   
-
 }
-
 
 bool setEquals<T>(Set<T>? a, Set<T>? b) {
   if (a == null) {
@@ -97,4 +126,16 @@ bool setEquals<T>(Set<T>? a, Set<T>? b) {
     }
   }
   return true;
+}
+
+dynamic unirConjuntos(List<Set> conjuntos) {
+  Set? uniao;
+  for (var conjunto in conjuntos) {
+    if (uniao == null) {
+      uniao = conjunto;
+    } else {
+      uniao = uniao.union(conjunto);
+    }
+  }
+  return uniao;
 }
