@@ -1,0 +1,41 @@
+Responda às seguintes questões:
+
+01) O que é um conjunto em Dart?
+
+02) Como criar um conjunto vazio em Dart?
+
+03) Como criar um conjunto com elementos em Dart?
+
+04) Qual a diferença entre um conjunto e uma lista em Dart?
+
+05) Como adicionar um elemento a um conjunto em Dart?
+
+06) Como remover um elemento de um conjunto em Dart?
+
+07) Como verificar se um conjunto contém um determinado elemento em Dart?
+
+08) Como verificar se um conjunto é vazio em Dart?
+
+09) Como unir dois conjuntos em Dart?
+
+10) Como obter a interseção de dois conjuntos em Dart?
+
+11) Como obter a diferença entre dois conjuntos em Dart?
+
+12) Como verificar se um conjunto é subconjunto de outro conjunto em Dart?
+
+13) Como verificar se dois conjuntos são iguais em Dart?
+
+14) Como criar um conjunto a partir de uma lista em Dart?
+
+15) Como criar uma lista a partir de um conjunto em Dart?
+
+16) Como transformar um conjunto em uma lista de strings em Dart?
+
+17) Como calcular a união de vários conjuntos em Dart?
+
+18) Como calcular a interseção de vários conjuntos em Dart?
+
+19) Como verificar se dois conjuntos são disjuntos em Dart?
+
+20) Como remover todos os elementos duplicados de uma lista usando um conjunto em Dart?
