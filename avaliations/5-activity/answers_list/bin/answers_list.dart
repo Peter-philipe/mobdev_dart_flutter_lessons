@@ -38,8 +38,7 @@ void main(List<String> args) {
   print('8) Como remover um elemento de uma lista em Dart?\n');
   print('Elemento removido em 1: ${marcas.removeAt(1)}\n');
 
-  print(
-      '9) Como verificar se uma lista contém um determinado elemento em Dart?');
+  print('9) Como verificar se uma lista contém um determinado elemento em Dart?');
   print('Lista a verificar: ${marcas}');
   print('${marcas.contains('Acer')} \n');
 
