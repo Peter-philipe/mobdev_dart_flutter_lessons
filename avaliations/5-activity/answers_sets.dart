@@ -105,9 +105,49 @@ void main(List<String> args) {
 
   print('${set_united}');
 
- 
+  print('18) Como calcular a interseção de vários conjuntos em Dart?');
+  var hokages = {'Hashirama', 'Naruto', 'Tobirama'};
+  var jinchuuriki = {'Gaara', 'Killer B', 'Naruto'};
+  var time_7 = {'Naruto', 'Sakura', 'Sasuke'};
 
-  
+  var lista_de_conjuntos = [hokages, jinchuuriki, time_7];
+  lista_de_conjuntos.forEach((element) {
+    print('Lista ${lista_de_conjuntos.indexOf(element) + 1}: ${element}');
+  });
+
+  var intersection = lista_de_conjuntos
+      .reduce((value, element) => value.intersection(element));
+
+  print('Interseção ${intersection}\n');
+
+  print('19) Como verificar se dois conjuntos são disjuntos em Dart?');
+
+  if (dinosauros.intersection(hokages).length == 0) {
+    print(dinosauros);
+    print(hokages);
+    print('São conjuntos disjuntos\n');
+  }
+
+  print('20) Como remover todos os elementos duplicados de uma lista usando um conjunto em Dart?');
+
+  var mesa = [
+    'teclado',
+    'mouse',
+    'lapis',
+    'lapis',
+    'lapis',
+    'monitor',
+    'mouse'
+  ];
+
+  var list_without_duplicates = mesa.toSet().toList();
+  print('Lista sem duplicatas: ${list_without_duplicates}');
+
+
+
+
+
+
 }
 
 bool setEquals<T>(Set<T>? a, Set<T>? b) {
