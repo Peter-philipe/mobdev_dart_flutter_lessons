@@ -113,18 +113,48 @@ class LikedWordsPage extends StatelessWidget {
     var appState = context.watch<MyAppState>();
     var favorites = appState.favorites;
 
-    return Center(
-      heightFactor: 10,
-      child: ListView(
-        children: [
-          Text("Favoritos"),
-          for (var wordpair in favorites) 
-            Text(wordpair.asCamelCase),
-          
-        ],
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(15),
+            side: BorderSide(
+              color: Theme.of(context).colorScheme.primary
+            )
+          ),
+          title: Text("Words you liked"),
+          centerTitle: true,
+        ),
+        backgroundColor: Theme.of(context).colorScheme.primaryContainer,
+        body: ListView(
+            children: [
+              for (var likedPair in favorites)
+                wrapFavoriteInCard(likedPair, context),
+              
+            ],
+          ),
       ),
     );
   }
+
+  Card wrapFavoriteInCard(WordPair favorite, context){
+
+      var card = Card(
+        color: Theme.of(context).colorScheme.primary,
+        child: ListTile(
+
+          leading: Icon(Icons.thumb_up),
+          title: Center(child: Text(favorite.asCamelCase)),
+          textColor: Colors.white,
+          ),
+          
+      );
+      
+
+    return card;
+
+  }
+
 }
 
 class GeneratorPage extends StatelessWidget {
